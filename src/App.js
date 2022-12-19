@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+ const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="ui comments">
+    <div class="comment">
+      <a class="avatar">
+        <img src="/images/avatar/small/stevie.jpg"/>
+      </a>
+      <div class="content">
+        <a class="author">Stevie Feliciano</a>
+        <div class="metadata">
+          <div class="date">2 days ago</div>
+          <div class="rating">
+            <i class="star icon"></i>
+            5 Faves
+          </div>
+        </div>
+        <div class="text">
+          Hey guys, I hope this example comment is helping you read this documentation.
+        </div>
+      </div>
     </div>
-  );
+  </div>
+  )
 }
-
 export default App;
